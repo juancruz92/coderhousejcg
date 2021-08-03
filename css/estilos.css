@@ -1,0 +1,200 @@
+.header__title {
+  font-family: 'bebas neue'; }
+
+.header__links {
+  font-family: 'montserrat';
+  text-transform: uppercase; }
+
+.footer p {
+  font-size: 0.7rem;
+  color: black; }
+
+a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+  font-family: 'montserrat';
+  font-weight: bolder;
+  font-size: 0.7rem; }
+
+.about__txt1 {
+  font-family: 'poppins';
+  font-style: italic;
+  text-align: justify; }
+
+h1 {
+  font-family: 'bebas neue';
+  font-size: 2rem;
+  letter-spacing: 2px; }
+
+.musicPage__section div p {
+  font-family: 'montserrat';
+  font-weight: bold;
+  font-size: 0.8rem; }
+
+nav {
+  background-color: black !important; }
+
+nav a {
+  color: white; }
+
+h3 {
+  color: white; }
+
+header {
+  background-color: black; }
+
+p {
+  color: black; }
+
+a {
+  color: white; }
+
+.about {
+  background-color: white; }
+
+.music {
+  background-color: black; }
+
+.footer {
+  background-color: black; }
+
+.footer p {
+  color: white; }
+
+.musicPage__section {
+  background-color: white; }
+
+h1 {
+  color: black; }
+
+body {
+  overflow-x: hidden; }
+
+/* BOX MODELING HEADER */
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 999; }
+
+/* BOX MODELING ABOUT SECTION INDEX */
+.about {
+  display: flex;
+  height: 600px;
+  width: 100%; }
+  .about p {
+    padding: 0px 50px; }
+
+.about__h1 {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 0px; }
+  .about__h1 h1 {
+    border-bottom: solid black 2px; }
+
+/* BOX MODELING MUSIC SECTION */
+.music {
+  padding: 50px 0px;
+  height: 500px; }
+  .music .music__video1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    top: 40px; }
+
+/* BOX MODELING FOOTER SECTION */
+.footer {
+  height: 80px; }
+  .footer p {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: justify;
+    padding: 10px 0px;
+    position: relative;
+    top: 20px; }
+
+/* BOX MODELING MUSIC PAGE ------------------------------------------------------------------*/
+.discography__title, .photos__title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  height: 100px;
+  position: relative;
+  top: 30px; }
+
+.discography__img1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 30px; }
+
+.discography__img1 a img {
+  transition: scale(5s); }
+
+.discography__img1 a img:hover {
+  transform: scale(1.03); }
+
+.discography__img2 a img {
+  transition: scale(5s); }
+
+.discography__img2 a img:hover {
+  transform: scale(1.03); }
+
+.discography__img2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 30px; }
+
+.discography__txtBajoBelgrano1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center; }
+
+.discography__txtBajoBelgrano2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center; }
+
+.discography__txtPix3l1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center; }
+
+.discography__txtPix3l2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center; }
+
+/* BOX MODELING PHOTOS PAGE SECTION ----------------------------------------------------------------------- */
+.photosPageSection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 20px; }
+
+.formContactMe {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: left;
+  align-items: left;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+textarea, input {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 6px; }
