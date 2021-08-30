@@ -19,18 +19,27 @@ a {
 
 .about__txt1 {
   font-family: 'poppins';
-  font-style: italic;
-  text-align: justify; }
+  text-align: justify;
+  font-size: 1.2rem; }
 
 h1 {
   font-family: 'bebas neue';
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 2px; }
 
 .musicPage__section div p {
   font-family: 'montserrat';
   font-weight: bold;
   font-size: 0.8rem; }
+
+.estilo_latestReleases p {
+  font-family: 'montserrat';
+  font-weight: bold;
+  font-size: 0.8rem; }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  h1 {
+    font-size: 2rem; } }
 
 nav {
   background-color: black !important; }
@@ -68,6 +77,9 @@ a {
 h1 {
   color: black; }
 
+.socialSticky {
+  background-color: chocolate; }
+
 body {
   overflow-x: hidden; }
 
@@ -77,22 +89,74 @@ header {
   top: 0px;
   z-index: 999; }
 
-/* BOX MODELING ABOUT SECTION INDEX */
-.about {
+/* BOX MODELING MAIN SECTION INDEX */
+/* BOX MODELING LATEST RELEASES SECTION INDEX */
+.latestReleases {
   display: flex;
-  height: 600px;
   width: 100%; }
-  .about p {
-    padding: 0px 50px; }
+  .latestReleases p {
+    padding: 0px 0px; }
 
-.about__h1 {
+.latestReleases__h1 {
   display: flex;
   flex-flow: wrap row;
   justify-content: center;
   align-content: center;
-  padding: 20px 0px; }
-  .about__h1 h1 {
+  padding: 60px 0px 20px 0px; }
+  .latestReleases__h1 h1 {
     border-bottom: solid black 2px; }
+
+.latestReleases__img1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 30px 0px 30px; }
+
+.latestReleases__img1 a img {
+  transition: scale(5s); }
+
+.latestReleases__img1 a img:hover {
+  transform: scale(1.03); }
+
+.latestReleases__img2 a img {
+  transition: scale(5s); }
+
+.latestReleases__img2 a img:hover {
+  transform: scale(1.03); }
+
+.latestReleases__img2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 30px; }
+
+.latestReleases__txtBajoBelgrano1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center; }
+
+.latestReleases__txtBajoBelgrano2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 0px 30px 0px; }
+
+.latestReleases__txtPix3l1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center; }
+
+.latestReleases__txtPix3l2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 0px 30px 0px; }
 
 /* BOX MODELING MUSIC SECTION */
 .music {
@@ -183,8 +247,15 @@ header {
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
-  padding: 10px 20px; }
+  padding: 30px 30px 0px 30px; }
 
+.photosPageSection4 {
+  padding-bottom: 30px; }
+
+.photos__title h1 {
+  padding: 0px 0px 0px 0px; }
+
+.photos__img1
 .formContactMe {
   display: flex;
   flex-flow: column wrap;
@@ -198,3 +269,93 @@ textarea, input {
   padding: 10px;
   margin: 3px;
   border-radius: 6px; }
+
+/* BOX MODELING BIO PAGE ----------------------------------------------------------------------- */
+.about__h1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  height: 100px;
+  position: relative;
+  top: 30px; }
+
+.about__img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 30px; }
+
+.about__p {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 30px 20px; }
+
+.about__p p {
+  width: 1000px; }
+
+/* BOX MODELING CONTACT ME PAGE ----------------------------------------------------------------------- */
+.formContactMe {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  padding: 40px 0px 0px 0px; }
+
+.stickyFooter {
+  position: absolute;
+  bottom: 0px; }
+
+/* BOX MODELING Social Sticky ----------------------------------------------------------------------- */
+.socialSticky {
+  position: fixed;
+  right: 20px;
+  top: 15px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1111;
+  border-radius: 5px; }
+
+.socialSticky a {
+  padding: 0px 20px 0px 20px; }
+
+/* media queries de detalles ----------------------------------------------------------------------------*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .socialSticky {
+    position: fixed;
+    left: 190px;
+    top: 12px;
+    width: 120px; }
+  .socialSticky a {
+    padding: 2px; }
+  .latestReleases__txtBajoBelgrano1 {
+    display: none; }
+  .latestReleases__txtBajoBelgrano2 {
+    display: none; }
+  .latestReleases__txtPix3l1 {
+    display: none; }
+  .latestReleases__txtPix3l2 {
+    display: none; }
+  .inputName {
+    position: absolute;
+    top: 40px;
+    left: 15%;
+    width: 250px; }
+  .inputEmail {
+    position: absolute;
+    top: 100px;
+    left: 15%;
+    width: 250px; }
+  .submitButton {
+    position: absolute;
+    top: 160px;
+    left: 15%;
+    width: 250px; }
+  .contactMe__title {
+    position: relative;
+    left: 20%; } }
